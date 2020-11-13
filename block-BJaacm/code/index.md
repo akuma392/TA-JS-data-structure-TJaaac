@@ -18,18 +18,18 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true both object will hold same memory address
+- `user === newUser;`//true both object will hold same memory address
+- `user.name === newUser.name;`// true both object will hold same memory address
+- `user.name == newUser.name;`//true both object will hold same memory address
+- `user.sibling == newUser.sibling;`// true both value is pointed to same memory address
+- `user.sibling === newUser.sibling;`//true both value is pointed to same memory address
+- `user.sibling == allBrothers;`//false both value hold different memory location
+- `user.sibling === allBrothers;`//false both value hold different memory location
+- `brothersCopy === allBrothers;`//false both value hold different memory location
+- `brothersCopy == allBrothers;`//false both value hold different memory location
+- `brothersCopy == user.sibling;`//true both value is pointed to same memory address
+- `brothersCopy === user.sibling;`//true both value is pointed to same memory address
+- `brothersCopy[0] === user.sibling[0];`//true both value is pointed to same memory address
+- `brothersCopy[1] === user.sibling[1];`//true both value is pointed to same memory address
+- `user.sibling[1] === newUser.sibling[1];`//true both value is pointed to same memory address
