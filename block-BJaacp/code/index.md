@@ -33,8 +33,8 @@ function personDetails(person) {
 }
 var person1 = { name: 'Alex', age: 30 };
 var person2 = personDetails(person1);
-console.log(person1); // { name: 'Alex', age: 30 }
-console.log(person2); //
+console.log(person1); // { name: 'Alex', age: 25 }
+console.log(person2); //{ name: 'John', age: 50 }
 ```
 
 3. What will be the output of the below code:
