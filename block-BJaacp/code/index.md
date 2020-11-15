@@ -11,15 +11,15 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
+- `[10] === [10]` // false , Both array will consist different memory address
 - What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
-- `user === newObj`
-- `user == newObj`
-- `user == obj`
-- `arr == arr2`
-- `arr === arr2`
+- `obj == newObj`// false , Both array will consist different memory address
+- `obj === newObj`// false , Both array will consist different memory address
+- `user === newObj`// false , Both array will consist different memory address
+- `user == newObj`//false , Both array will consist different memory address
+- `user == obj` // true, both array will point to same memory address
+- `arr == arr2` //true, both array will point to same memory address
+- `arr === arr2` //true, both array will point to same memory address
 
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
@@ -33,8 +33,8 @@ function personDetails(person) {
 }
 var person1 = { name: 'Alex', age: 30 };
 var person2 = personDetails(person1);
-console.log(person1);
-console.log(person2);
+console.log(person1); // { name: 'Alex', age: 30 }
+console.log(person2); //
 ```
 
 3. What will be the output of the below code:
@@ -46,6 +46,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //1. true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
